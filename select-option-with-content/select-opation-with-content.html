@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+<title>Company lookup</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="font-awesome.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container accord1">
+  <div class="panel-group" id="" role="" aria-multiselectable="">
+    <div class="row">
+      <div class="col-lg-9 col-md-12 col-sm-12">
+        <div class="select_opt mrg_t25">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle select_item" type="button" data-toggle="dropdown">Financial Figures Basic <span class=""><i class="more-less fa fa-chevron-down figure_arrw1 pull-right"></i></span></button>
+              <ul class="dropdown-menu">
+                <li onclick="myFunctionlia()">Financial Figures Basic</li>
+                <li onclick="myFunctionlib()">All Figure</li>
+              </ul>
+            </div>
+            <!--<i class="more-less fa fa-chevron-down figure_arrw1 pull-right"></i>--> 
+          <div id="">
+              <div class="order_table bord_3lrb">
+                <div class="divFinancial">
+                  <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                </div>
+                <div class="divallFinancial" style="display:none;">
+                  <div>DIVVV 22 </BR>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- container --> 
+
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="bootstrap.min.js"></script> 
+
+<script type="text/javascript">
+<!--onclick--change--image--->
+$(".sort").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+<!--financil---selection---->
+function myFunctionlia() {
+  $(".divFinancial").show();
+   $(".divallFinancial").hide();
+   $(".select_item").html('Financial Figures Basic<span class=""><i class="more-less fa fa-chevron-down figure_arrw1 pull-right"></i></span>');
+}
+
+function myFunctionlib() {
+   $(".divallFinancial").show();
+   $(".divFinancial").hide();
+    $(".select_item").html('All Figure<span class=""><i class="more-less fa fa-chevron-down figure_arrw1 pull-right"></i></span>');
+}
+</script>
+</body>
+</html>
